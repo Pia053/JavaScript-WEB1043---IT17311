@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="Bai1.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nguyễn Phúc Lâm</title>
+  </head>
+  <body>
+    <div class="giaodien">
+      <header></header>
+      <nav>
+        <a href="Bai1.html">Bài 1: </a>
+        <a href="Bai2.html">Bài 2: </a>
+        <a href="Bai3.html">Bài 3: </a>
+      </nav>
+      <div id="full">
+        <form id="myForm" onsubmit="return dangki()">
+          <div class="thongtin">
+            <h1>Đăng Kí Thành Viên</h1>
+            <br />
+
+            <label>Mã Sinh Viên : </label> <input id="masinhvien" type="text" />
+            <p id="loimasinhvien" style="color: red"></p>
+            <br />
+
+            <br />
+            <label>Họ và Tên : </label><input id="hovaten" type="text" />
+            <p id="loihoten" style="color: red"></p>
+            <br />
+
+            <br />
+            <label>Email : </label><input id="email" type="email" />
+            <p id="loiemail" style="color: red"></p>
+            <br />
+
+            <br />
+            <label>Giới Tính : </label><input type="radio" name="gioitinh" />Nam
+            <input type="radio" name="gioitinh" />Nữ
+            <p id="loigioitinh" style="color: red" value=""></p>
+            <br />
+          </div>
+          <div class="thontinsothich">
+            <br />
+            <label>Sở Thích : </label>
+            <p><input type="checkbox" name="sothich" />Đọc Sách</p>
+            <input type="checkbox" name="sothich" />Du Lịch
+            <input type="checkbox" name="sothich" />Âm Nhạc
+            <input type="checkbox" name="sothich" />Ẩm Thực
+            <input type="checkbox" name="sothich" />Khác
+            <p id="loisothich" style="color: red"></p>
+            <br />
+          </div>
+          <div class="thontinquoctich">
+            <br />
+
+            <label>Quốc Tịch : </label
+            ><select name="quoctich" id="cbbquoctich">
+              <option value="0">Chọn Quốc Gia</option>
+              <option value="1">Hàn Quốc</option>
+              <option value="2">Thái Lan</option>
+              <option value="3">Lào</option>
+              <option value="4">Campuchia</option>
+            </select>
+            <p id="loiquoctich" style="color: red"></p>
+            <br />
+          </div>
+          <label>Ghi Chú : </label>
+          <textarea rows="4" col="50" id="ghichu" name=""></textarea>
+          <p id="loighichu" style="color: red"></p>
+          <br />
+          <button type="submit">Đăng Kí</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./Bai2.js"></script>
+  </body>
+</html>

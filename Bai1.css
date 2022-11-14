@@ -1,0 +1,56 @@
+*{  
+    margin : 0 auto;
+    padding : 0 auto;
+}
+body{
+    text-align: center;
+}
+
+#full {
+    font-size: 20px;
+    border: 2px solid red;
+    width: 600px;
+    height: 800px;
+    position: relative;
+}
+#full h1{
+    color:brown;
+}
+
+#full label {
+    position: absolute;
+    left : 40px;
+}
+.h1muahang{
+    color:brown
+}
+
+.container table{
+    width: 900px;
+    height: 600px;
+}
+
+.giaodien{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.giaodien>header{
+    background-image: url(image/header.jpg);
+    background-size: 100% 100%;
+    height: 0px;
+    padding-bottom: 25%;
+}
+.giaodien>nav{
+    background-color: indigo;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.giaodien>nav>a{
+    text-decoration: none;
+    margin: 50px;
+    color: white;
+    
+}

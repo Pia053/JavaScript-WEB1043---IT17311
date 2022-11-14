@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="Bai1.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="giaodien">
+        <header>
+            
+        </header>
+        <nav>
+            <a href="Bai1.html">Bài 1: </a>
+            <a href="Bai2.html">Bài 2: </a>
+            <a href="Bai3.html">Bài 3: </a>
+        </nav>
+        <h1 class="h1muahang">Bán Hàng</h1>
+    <div class="container">
+        <select id="mucgia" onchange="chonmucgia()">
+            <option value="-1">Chọn mức giá</option>
+            <option value="200">đến 200</option>
+            <option value="400">đến 400</option>
+            <option value="600">đến 600</option>
+            <option value="800">đến 800</option>
+        </select>
+        <table border="1" id="table_SP">
+            <tr>
+                <th></th>
+                <th >Hàng hóa</th>
+                <th >đơn giá</th>
+                <th >số lượng</th>
+                <th >thành tiền</th>
+            </tr>
+            <tr>
+                <td>
+                  <input onclick="checkbox(0)" type="checkbox" name="chon">
+                </td>
+                <td>iphone9</td>
+                <td name="dongia">700</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled ></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td>
+                  <input onclick="checkbox(1)" type="checkbox" name="chon">
+                </td>
+                <td>Samsung</td>
+                <td name="dongia">400</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled ></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td>
+                  <input onclick="checkbox(2)" type="checkbox" name="chon">
+                </td>
+                <td>Nokia</td>
+                <td name="dongia">100</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled ></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td>
+                  <input onclick="checkbox(3)" type="checkbox" name="chon">
+                </td>
+                <td>Sony Xperia</td>
+                <td name="dongia">450</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled ></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td>
+                  <input onclick="checkbox(4)" type="checkbox" name="chon">
+                </td>
+                <td>Motoroal</td>
+                <td name="dongia">180</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled ></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td>
+                  <input onclick="checkbox(5)" type="checkbox" name="chon">
+                </td>
+                <td>Oppo</td>
+                <td name="dongia">600</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled ></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td>
+                  <input onclick="checkbox(6)" type="checkbox" name="chon">
+                </td>
+                <td>bphone</td>
+                <td name="dongia">90</td>
+                <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled ></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr class="tong">
+                <th colspan="4">Tổng</th>
+                <td id="tinhtong"><b>580</b></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<script src="Bai3.js"></script>
+</body>
+</html>
